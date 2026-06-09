@@ -16,7 +16,7 @@
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  height: 100dvh;
+  min-height: 100dvh;
 
   box-shadow:
     inset 0 0 220px rgba(0, 0, 0, 0.42),
@@ -1085,6 +1085,13 @@
 @media (max-width: 999px){
   .testimonials-contents__item:nth-child(4) {
     display: flex;
+  }
+  .hero__content {
+    flex-direction: column;
+  }
+  .hero {
+    min-height: 100%;
+    padding: 5% 0px 0px 0px;
   }
   
 }
