@@ -1,0 +1,1190 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "Canela";
+  src: url("../fonts/Canela-BoldItalic-Trial.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  height: 100dvh;
+
+  box-shadow:
+    inset 0 0 220px rgba(0, 0, 0, 0.42),
+    inset 0 0 90px rgba(0, 0, 0, 0.3);
+}
+
+/* ==============================
+   BACKGROUND IMAGE / VIDEO
+============================== */
+
+/* .hero > img,
+.hero > video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: -4;
+
+  filter: brightness(0.78) contrast(1.08) saturate(0.85);
+} */
+
+.hero > img,
+.hero > video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: -4;
+
+  filter: brightness(0.68) contrast(1.12) saturate(0.9);
+}
+
+/* ==============================
+   DARK + DEPTH LAYER
+============================== */
+
+/* .hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -3;
+
+  background:
+
+        
+    radial-gradient(ellipse at top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.28) 40%, transparent 75%),
+    
+    linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.62) 0%,
+        rgba(0, 0, 0, 0.48) 25%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.12) 75%,
+        transparent 100%
+      ),
+    
+    repeating-linear-gradient(
+        90deg,
+        rgba(255, 190, 120, 0.02) 0px,
+        rgba(255, 190, 120, 0.02) 240px,
+        transparent 240px,
+        transparent 520px
+      );
+} */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -3;
+
+  background:
+    radial-gradient(
+      ellipse at top,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.42) 40%,
+      transparent 75%
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(0, 0, 0, 0.62) 22%,
+      rgba(0, 0, 0, 0.42) 50%,
+      rgba(0, 0, 0, 0.18) 78%,
+      transparent 100%
+    ),
+
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 195, 120, 0.02) 0px,
+      rgba(255, 195, 120, 0.02) 220px,
+      transparent 220px,
+      transparent 500px
+    );
+} */
+
+/* ==============================
+   GOLD COLOR GRADE (KEY LOOK)
+============================== */
+
+/* .hero::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+
+        
+    radial-gradient(
+      circle at 18% 55%,
+      rgba(255, 200, 130, 0.14) 0%,
+      rgba(255, 180, 110, 0.08) 25%,
+      rgba(255, 160, 90, 0.04) 45%,
+      transparent 70%
+    ),
+    
+    radial-gradient(
+        circle at 58% 42%,
+        rgba(255, 215, 150, 0.16) 0%,
+        rgba(255, 200, 130, 0.09) 25%,
+        rgba(255, 180, 110, 0.04) 50%,
+        transparent 70%
+      ),
+    
+    linear-gradient(
+        90deg,
+        rgba(70, 45, 20, 0.4) 0%,
+        rgba(95, 65, 30, 0.32) 20%,
+        rgba(120, 85, 45, 0.24) 50%,
+        rgba(150, 110, 65, 0.14) 75%,
+        rgba(180, 135, 85, 0.06) 100%
+      );
+
+  mix-blend-mode: soft-light;
+} */
+
+
+ .hero::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+
+    radial-gradient(
+      circle at 16% 55%,
+      rgba(255, 190, 100, 0.22) 0%,
+      rgba(255, 170, 70, 0.12) 28%,
+      rgba(255, 140, 40, 0.05) 50%,
+      transparent 72%
+    ),
+
+    radial-gradient(
+      circle at 58% 42%,
+      rgba(255, 220, 140, 0.18) 0%,
+      rgba(255, 200, 110, 0.10) 25%,
+      rgba(255, 180, 90, 0.04) 50%,
+      transparent 72%
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(45, 28, 10, 0.62) 0%,
+      rgba(75, 48, 18, 0.50) 20%,
+      rgba(105, 72, 35, 0.36) 50%,
+      rgba(135, 96, 55, 0.18) 75%,
+      rgba(170, 125, 70, 0.08) 100%
+    );
+
+  mix-blend-mode: soft-light;
+} 
+/* ==============================
+   GLOBAL GOLD GLOW
+============================== */
+
+/* .hero__glow {
+  position: absolute;
+  inset: 0;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle at 62% 38%,
+    rgba(255, 215, 150, 0.24) 0%,
+    rgba(255, 200, 130, 0.12) 18%,
+    rgba(255, 180, 110, 0.05) 40%,
+    transparent 65%
+  );
+}
+**/
+.hero__glow {
+  position: absolute;
+  inset: 0;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 20% 52%,
+      rgba(255, 195, 100, 0.22) 0%,
+      rgba(255, 170, 70, 0.10) 30%,
+      transparent 60%
+    ),
+
+    radial-gradient(
+      circle at 60% 38%,
+      rgba(255, 220, 150, 0.18) 0%,
+      rgba(255, 200, 120, 0.08) 25%,
+      transparent 60%
+    );
+}
+.hero__content {
+  position: relative;
+  z-index: 10;
+
+  max-width: 1900px;
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 40px 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 80px;
+} 
+
+.hero__glow {
+  position: absolute;
+  inset: 0;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 20% 52%,
+      rgba(255, 195, 100, 0.22) 0%,
+      rgba(255, 170, 70, 0.10) 30%,
+      transparent 60%
+    ),
+
+    radial-gradient(
+      circle at 60% 38%,
+      rgba(255, 220, 150, 0.18) 0%,
+      rgba(255, 200, 120, 0.08) 25%,
+      transparent 60%
+    );
+}
+
+.testimonials {
+  /*Стили которые затемняют и делают эффект Blur на секцию справа влияет*/
+  position: relative;
+  width: 520px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 32px;
+  /* overflow: hidden; */
+  isolation: isolate;
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.08) 25%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.featured {
+  /*Выделение карточки*/
+  padding: 10px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+/* .review-card:not(.featured) { Растягивает секцию блока отзывов по вертикале и прижимает к углам вертикальным
+  padding: 18px 0;
+  background: transparent;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+} */
+
+.testimonials {
+  /*Цвет текста внутри секции на слой выше Blur*/
+  color: #fff;
+}
+
+.stars {
+  /*Цвет звездочек*/
+  color: #d9b26a;
+  letter-spacing: 2px;
+}
+
+.hero__info {
+  width: 100%;
+  color: white;
+}
+.testimonials {
+}
+.hero__italic {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 0.9;
+  color: #c89a56;
+}
+.hero__span {
+  color: #c89a56;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  font-weight: medium;
+  font-size: 16px;
+}
+.hero__title {
+  color: #f4f4f4;
+  margin-top: -8px;
+  font-size: 78px;
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+.hero__italic {
+}
+.hero__subtitle {
+  color: #d7d7d7;
+  margin-top: 24px;
+  font-size: 20px;
+}
+.hero-achievements {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 60px;
+  max-width: 630px;
+  width: 100%;
+  margin: 60px 0;
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+.hero-achievements__item {
+  display: flex;
+  gap: 15px;
+}
+.hero-achievements__svg {
+  color: #c89a56;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+}
+.hero-achievements__item:not(:last-child) .hero-achievements__title {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+.hero-achievements__subtitle {
+  font-size: 14px;
+  /* margin-top: 5px; */
+  line-height: 1.6;
+}
+.hero-achievements__item:not(:nth-child(-n + 3)) .hero-achievements__title {
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 25px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5;
+  text-transform: uppercase;
+}
+.hero-btns__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #b17f43;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.hero-btns:has(.hero-btns__item:nth-child(2):hover) {
+  .hero-btns__item:nth-child(1) {
+    background-color: transparent;
+  }
+  .hero-btns__item:nth-child(2) {
+    background-color: #b17f43;
+  }
+}
+.hero-btns__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 10px;
+  padding: 15px 45px;
+}
+.hero-btns__item:nth-child(2) a {
+  padding: 20px 45px;
+}
+.hero-btns__item:nth-child(1) {
+  max-width: 400px;
+  width: 100%;
+  background-color: #b17f43;
+}
+.hero-btns__item:nth-child(2) {
+  width: 100%;
+}
+.hero-btns__svg {
+  width: 25px;
+  height: 25px;
+  margin-top: 3px;
+}
+.hero-sound {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.hero-sound__svg {
+  width: 30px;
+  height: 30px;
+}
+
+.hero-sound--sound {
+  display: block;
+}
+
+.hero-sound--mute {
+  display: none;
+}
+
+.hero-sound.is-muted .hero-sound--sound {
+  display: none;
+}
+
+.hero-sound.is-muted .hero-sound--mute {
+  display: block;
+}
+
+.hero-sound {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.fa-star {
+  color: #fbbc04;
+  font-size: 16px;
+}
+.fa-circle-check {
+  color: #1a73e8; /* синий как у Google */
+  font-size: 12px;
+}
+.testimonials__title {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.testimonials__title span {
+  font-style: italic;
+}
+.testimonials__subtitle {
+  text-align: center;
+}
+.testimonials__subtitle:nth-child(1) {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #c89a56;
+  margin-bottom: 10px;
+}
+.testimonials__subtitle:last-child {
+  margin-bottom: 10px;
+}
+
+.testimonials-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.testimonials-contents__item::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-image: url("../images/google.svg");
+  width: 20px;
+  height: 20px;
+}
+.testimonials-contents__item {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+.testimonials-contents__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.testimonials-contents__avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.testimonials-contents__review {
+}
+
+.testimonials-contents__name {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+.testimonials-contents__date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+.testimonials-contents__comment {
+  font-size: 13px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 10px;
+}
+
+.testimonials-contents__info {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  padding: 4px 10px;
+  background: #188038;
+  text-align: center;
+  max-width: 160px;
+  margin: auto;
+  padding: 10px 20px;
+  z-index: 2;
+  position: relative;
+  top: 69px;
+}
+
+@media (max-width: 1200px) {
+  .hero__content {
+    padding: 30px 50px;
+    gap: 50px;
+  }
+
+  /* ===== TEXT ===== */
+
+  .hero__span {
+    font-size: clamp(14px, 1vw, 16px);
+  }
+
+  .hero__italic {
+    font-size: clamp(54px, 6vw, 84px);
+  }
+
+  .hero__title {
+    font-size: clamp(48px, 5.5vw, 78px);
+  }
+
+  .hero__subtitle {
+    font-size: clamp(16px, 1.5vw, 20px);
+  }
+
+  /* ===== ACHIEVEMENTS ===== */
+
+  .hero-achievements {
+    gap: 35px;
+    margin: 40px 0;
+    /* grid-template-columns: repeat(2, max-content); */
+  }
+
+  .hero-achievements__title {
+    /* font-size: clamp(18px, 2vw, 26px); */
+  }
+
+  .hero-achievements__subtitle {
+    font-size: clamp(12px, 1.2vw, 14px);
+  }
+
+  /* ===== BUTTONS ===== */
+
+  .hero-btns {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .hero-btns__item a {
+    padding: 14px 30px;
+  }
+
+  /* ===== SOUND ===== */
+
+  .hero-sound {
+    margin-top: 15px;
+  }
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials:not(.testimonials.mobil) {
+    min-height: 650px;
+  }
+
+  .testimonials__title {
+    font-size: 22px;
+  }
+
+  .testimonials-contents__name {
+    font-size: 14px;
+  }
+
+  .testimonials-contents__comment {
+    font-size: 12.5px;
+  }
+}
+
+/* Большие мониторы */
+@media (max-width: 1920px) {
+} /*Изменения не требуются*/
+
+/* Ноутбуки */
+@media (max-width: 1440px) {
+  .testimonials__title {
+    font-size: 24px;
+  }
+} /*Изменения не требуются*/
+
+@media (max-width: 1366px) {
+  .testimonials__title {
+    font-size: 24px;
+  }
+}
+
+/* Маленькие ноутбуки */
+@media (max-width: 1280px) {
+} /*Изменения не требуются*/
+
+/* Планшеты горизонтально */
+@media (max-width: 1024px) {
+  .hero-btns__item {
+    /* font-size: clamp(16px, 2vw, 12px); */
+    font-size: 12px;
+  }
+}
+
+/* Планшеты вертикально */
+@media (max-width: 820px) {
+  .hero {
+    height: auto;
+  }
+  .hero__content {
+    flex-direction: column;
+    padding: 240px 50px 30px 50px;
+  }
+}
+
+/* Большие смартфоны */
+@media (max-width: 480px) {
+  .hero-achievements {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .hero-btns {
+    flex-direction: column;
+  }
+  .hero-btns__item {
+    max-width: 100%;
+  }
+  .hero-btns__item:nth-child(1) {
+    width: 100%;
+  }
+  .hero > video {
+    height: 100dvh;
+  }
+}
+
+/* Маленькие смартфоны */
+@media (max-width: 375px) {
+  .hero-btns__item:nth-child(1) {
+    width: 100%;
+  }
+
+  .hero-btns__item:nth-child(2) {
+    width: 100%;
+  }
+}
+.hero__rating {
+  display: none;
+}
+
+@media (min-width: 482px) {
+  .hero-btns__item:nth-child(1) {
+    /* max-width: 320px; */
+    width: 100%;
+  }
+
+  .hero-btns__item:nth-child(2) {
+    max-width: 250px;
+    width: 100%;
+  }
+  .testimonials.mobil {
+    display: none;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  .testimonials {
+    height: 700px;
+  }
+  .testimonials-contents__item:nth-child(4) {
+    display: none;
+  }
+  .testimonials__title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1280px) and (max-height: 800px) {
+  .testimonials {
+    height: 700px;
+  }
+  .testimonials__title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1367px) {
+  .testimonials {
+    height: 780px;
+  }
+  .testimonials__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-sound {
+    margin-top: 15px;
+  }
+  .hero__content {
+    padding: 130px 50px 30px 50px;
+  }
+  .testimonials {
+    display: none;
+  }
+  .testimonials.mobil {
+    display: block;
+    max-width: 90%;
+    margin: auto;
+  }
+  .hero__rating {
+    display: block;
+    margin: 40px 0;
+  }
+  .hero__rating__title {
+    display: flex;
+    gap: 5px;
+    span {
+      margin-left: 5px;
+      margin-bottom: 10px;
+    }
+  }
+  .testimonials__title {
+    font-size: 30px;
+    margin: 20px;
+  }
+  .hero-sound {
+    justify-content: center;
+  }
+  .testimonials__subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .testimonials-contents__item {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+    padding: 10px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+  }
+
+  .testimonials.mobil {
+    position: relative;
+  }
+  .testimonials-contents__btn::before {
+    content: "";
+    background-size: cover;
+    background-image: url("../images/arow.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    /* transform: rotateZ(180deg); */
+    right: -15px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    transform: translateY(-50%) rotateY(180deg);
+  }
+  .testimonials-contents__btn::after {
+    content: "";
+    background-size: cover;
+    background-image: url("../images/arow.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    transform: translateY(-50%);
+  }
+  /*-----------------------------------------------------*/
+  .testimonials-contents {
+    position: relative;
+    min-height: 170px; /* подгони если нужно */
+    overflow: hidden;
+  }
+
+  .testimonials-contents__item {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(120%);
+    transition:
+      transform 0.45s ease,
+      opacity 0.45s ease,
+      visibility 0.45s ease;
+  }
+
+  .testimonials-contents__item.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .testimonials {
+    height: max-content;
+  }
+}
+
+/*-----------------------------------------*/
+
+.testimonials-nav {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.testimonials-prev,
+.testimonials-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.testimonials-prev {
+  left: -20px;
+}
+
+.testimonials-next {
+  right: -20px;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////*/
+
+@media (max-width: 390px) {
+
+  .hero__content{
+    padding: 110px 30px 30px;
+  }
+
+  .hero__title{
+    font-size: 47px;
+  }
+
+  .hero__italic{
+    font-size: 38px;
+    margin-top: 10px;
+  }
+
+  .hero__subtitle{
+    font-size: 14px;
+  }
+
+  .hero-achievements{
+    gap: 20px 25px;
+    margin: 15px 0;
+  }
+
+  .hero-btns__item a{
+    padding: 14px 20px;
+  }
+
+  .testimonials.mobil{
+    max-width: 90%;
+  }
+
+}
+
+@media (max-width: 375px) and (max-height: 700px) {
+
+   .hero__rating {
+    margin: 20px 0;
+  }
+  .hero__content{
+    padding: 90px 20px 25px;
+  }
+
+  .hero__span{
+    font-size: 13px;
+  }
+
+  .hero__title{
+    font-size: 46px;
+    line-height: .95;
+  }
+
+  .hero__italic{
+    font-size: 48px;
+  }
+
+  .hero__subtitle{
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .hero-achievements{
+    margin: 25px 0;
+    gap: 10px 18px;
+  }
+
+  .hero-achievements__item{
+    gap: 10px;
+  }
+
+  .hero-achievements__svg{
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero-btns{
+    gap: 12px;
+  }
+
+  .hero-btns__item a{
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+
+  .hero-sound{
+    margin-top: 10px;
+  }
+  .hero > video {
+    height: calc(100dvh + 100px);
+  }
+
+}
+
+
+@media (max-width: 360px){
+
+  .hero__content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero__title{
+    font-size: 44px;
+  }
+
+  .hero__italic{
+    font-size: 46px;
+  }
+
+  .hero-achievements{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 0;
+  }
+
+  .hero-achievements__item:not(:last-child) .hero-achievements__title{
+    font-size: 22px;
+  }
+  .hero__rating {
+    margin: 17px 0;
+  }
+
+}
+@media (min-width: 1000px){
+  .testimonials-contents__item:nth-child(4) {
+    display: none;
+  }
+  
+}
+@media (min-width: 1370px){
+  .testimonials-contents__item:nth-child(4) {
+    display: flex;
+  }
+  
+}
+@media (max-width: 999px){
+  .testimonials-contents__item:nth-child(4) {
+    display: flex;
+  }
+  
+}
+/* @media (max-width: 414px) and (max-height: 896px) {
+      .hero > video {
+        height: calc(100dvh + 100px);
+    }
+} */
+/* @media (max-width: 412px) and (max-height: 915px) {
+      .hero > video {
+        height: calc(100dvh + 100px);
+    }
+} */
+/* @media (max-width: 1024px) and (max-height: 1366px) {
+  .hero {
+    height: auto;
+  }
+      .hero__content {
+        flex-direction: column;
+        gap: 50px;
+      }
+      
+      .hero__span {
+        font-size: 16px;
+      }
+      .hero__title {
+        font-size: 78px;
+      }
+      .hero__subtitle {
+        font-size: 20px;
+      }
+      .hero__italic {
+        font-size: 84px;
+      }
+      .hero-achievements {
+        gap: 35px;
+        margin: 40px 0;
+      }
+      .hero-achievements__item:not(:last-child) .hero-achievements__title {
+        font-size: 38px;
+      }
+      .hero-achievements__item:last-child .hero-achievements__title {
+        font-size: clamp(12px, 2.2vw,26px);
+      }
+      .hero-achievements__subtitle {
+        font-size: clamp(12px, 2.2vw,26px);
+      }
+      .hero-btns__item {
+        font-size: 15px;
+      }
+      .hero-btns__item:nth-child(1) {
+        min-width: 485px;
+      }
+      .hero-sound{
+        font-size: 20px;
+      }
+      .testimonials__subtitle:nth-child(1) {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .testimonials__title {
+        font-size: 30px;
+      }
+      .testimonials__subtitle {
+        font-size: 16px;
+      }
+      .testimonials-contents__name {
+        font-size: 20px;
+      }
+      .testimonials-contents__avatar {
+        width: 50px;
+        height: 50px;
+      }
+      .testimonials-contents__date {
+        font-size: 16px;
+      }
+      .testimonials-contents__comment {
+        font-size: 16.5px;
+      }
+      .testimonials-contents__item::before {
+        width: 25px;
+        height: 25px;
+      }
+} */
+/* @media (width: 1024px) and (height: 1366px) {
+  .hero__info {
+        padding: 350px 0px 60px 0px;
+      }
+} */
+/* @media (max-width: 820px) and (max-height: 1180px) {
+  .hero-info {
+    padding: 0px 0px 60px 0px;
+  }
+  .testimonials {
+    margin: auto;
+  }
+  .hero-btns .hero-btns__item:nth-child(1) {
+    width: 210px !important;
+  }
+  .hero-btns__item:nth-child(2) a {
+    padding: 0;
+  }
+} */
