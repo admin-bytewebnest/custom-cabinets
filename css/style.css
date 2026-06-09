@@ -611,10 +611,28 @@
 
 @media (max-width: 1200px) {
   .hero__content {
-    padding: 30px 50px;
+    padding: 200px 50px 30px 50px;
     gap: 50px;
-  }
 
+  }
+@media (max-width: 550px) {
+  .hero-achievements {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .hero-btns {
+    flex-direction: column;
+  } 
+  .hero-btns__item:nth-child(1) {
+    width: 100%;
+    margin: auto;
+  }
+  .hero-btns__item:nth-child(2) {
+    /* width: 90%;
+    margin: auto; */
+    
+
+  }
+}
   /* ===== TEXT ===== */
 
   .hero__span {
@@ -764,8 +782,8 @@
   }
 
   .hero-btns__item:nth-child(2) {
-    max-width: 250px;
-    width: 100%;
+    /* max-width: 250px; */
+    /* width: 100%; */
   }
   .testimonials.mobil {
     display: none;
