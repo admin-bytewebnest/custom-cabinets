@@ -461,9 +461,7 @@
   width: 100%;
   background-color: #b17f43;
 }
-.hero-btns__item:nth-child(2) {
-  width: 100%;
-}
+
 .hero-btns__svg {
   width: 25px;
   height: 25px;
@@ -615,6 +613,11 @@
     gap: 50px;
 
   }
+@media (min-width: 1205px) {
+  .hero-btns__item:nth-child(2) {
+  max-width: 250px;
+}
+}
 @media (max-width: 550px) {
   .hero-achievements {
     grid-template-columns: repeat(2, max-content);
