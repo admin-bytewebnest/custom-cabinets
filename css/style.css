@@ -457,7 +457,7 @@
   padding: 20px 45px;
 }
 .hero-btns__item:nth-child(1) {
-  max-width: 400px;
+  max-width: 315px;
   width: 100%;
   background-color: #b17f43;
 }
@@ -1220,3 +1220,39 @@
     padding: 0;
   }
 } */
+
+
+@media (min-width: 1280px) {
+  .hero-btns__item {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1300px) {
+        .hero-btns__item:nth-child(1) {
+          max-width: 500px;
+          width: 100%;
+        }
+}
+
+@media (max-width: 1279px) {
+        .hero-btns__item:nth-child(1) {
+          max-width: 300px;
+          width: 100%;
+        }
+        .hero-btns__item {
+          font-size: 10px;
+        }
+}
+@media (max-width: 546px) {
+        .hero-btns__item:nth-child(1) {
+          max-width: 100%;
+        }
+}
+@media (max-width: 330px) {
+        .hero-btns__item:nth-child(1) span{
+          display: none;
+        }
+        .hero-btns__item {
+          font-size: 10px;
+        }
+}
