@@ -1256,3 +1256,12 @@
           font-size: 10px;
         }
 }
+
+.hero__info .hero__subtitle span {
+  display: inline;
+}
+@media (max-width: 540px) {
+  .hero__info .hero__subtitle span {
+  display: none;
+}
+}
