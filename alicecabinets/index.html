@@ -1,0 +1,376 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AliceCabinets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <!-- <img src="./images/hero.jpeg" alt="hero"> -->
+
+    <video id="hero-video" autoplay muted loop playsinline>
+        <source src="./Source/video/video.mp4" type="video/mp4"></source>
+        
+    </video>
+
+        <span class="hero__glow"></span>
+
+        <div class="hero__content">
+
+            <div class="hero__info">
+                <div class="hero__span">CUSTOM CABINETS & HOME REMODELING</div>
+                <h1 class="hero__title">Custom Cabinets</h1>
+                <div class="hero__italic">Built for Your Lifestyle.</div>
+                <div class="hero__subtitle">High-end cabinetry and complete home remodeling for homeowners who <br> value quality, detail, and design.</div>
+                <div class="hero__rating">
+                    <div class="hero__rating__title">
+                       
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        
+                        <span>5/5 Rating</span>
+                    </div>
+                    <div class="hero__rating__subtitle">
+                        <p>110+ Google Reviews</p>
+                    </div>
+                </div>
+                <div class="hero-achievements">
+                    <div class="hero-achievements__item">
+                        <div class="hero-achievements__icon">
+                            <svg class="hero-achievements__svg" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.5,34.44A3.07,3.07,0,0,1,15.89,34L9.82,30.45A14.79,14.79,0,0,1,2.25,17.7V8A3.2,3.2,0,0,1,4.34,5L16.4.57a3.2,3.2,0,0,1,2.2,0L30.66,5a3.2,3.2,0,0,1,2.09,3V17.7a14.79,14.79,0,0,1-7.57,12.75L19.11,34A3.07,3.07,0,0,1,17.5,34.44Zm0-31.56a.67.67,0,0,0-.24,0L5.2,7.33A.69.69,0,0,0,4.75,8V17.7a12.3,12.3,0,0,0,6.33,10.59l6.07,3.56a.73.73,0,0,0,.7,0l6.07-3.56h0A12.3,12.3,0,0,0,30.25,17.7V8a.69.69,0,0,0-.45-.65L17.74,2.92A.67.67,0,0,0,17.5,2.88Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M16.4,22.35a1.3,1.3,0,0,1-.81-.29l-4.27-3.6a1.25,1.25,0,0,1,1.61-1.92l3.35,2.82L22,13.06a1.25,1.25,0,0,1,1.86,1.68l-6.48,7.2A1.27,1.27,0,0,1,16.4,22.35Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="hero-achievements__inner">
+                            <div class="hero-achievements__title">10+</div>
+                            <div class="hero-achievements__subtitle">Years</div>
+                            <div class="hero-achievements__subtitle">of Experience</div>
+                        </div>
+                    </div>
+                    <div class="hero-achievements__item">
+                        <div class="hero-achievements__icon">
+                            <svg class="hero-achievements__svg" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="white" fill-opacity="0.01" />
+                                <rect x="4" y="4" width="40" height="40" stroke="currentColor" stroke-width="4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M24 4V44" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M4 24H44" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="hero-achievements__inner">
+                            <div class="hero-achievements__title">500+</div>
+                            <div class="hero-achievements__subtitle">Projects</div>
+                            <div class="hero-achievements__subtitle">Completed</div>
+                        </div>
+                    </div>
+                    <div class="hero-achievements__item">
+                        <div class="hero-achievements__icon">
+                            <svg class="hero-achievements__svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M8,31a2,2,0,0,1-1.17-.38A2.13,2.13,0,0,1,6,28.69l.73-8.19L1.5,14.34a2.14,2.14,0,0,1-.39-2.06A2.06,2.06,0,0,1,2.6,10.9l7.62-1.8,4-7a2.05,2.05,0,0,1,3.58,0l4,7.05,7.62,1.8a2.06,2.06,0,0,1,1.49,1.38,2.14,2.14,0,0,1-.39,2.06L25.32,20.5l.73,8.19a2.13,2.13,0,0,1-.88,1.93,2,2,0,0,1-2,.2L16,27.58,8.84,30.82A2,2,0,0,1,8,31ZM16.05,3l-4.3,7.43a1,1,0,0,1-.64.48l-8,1.89c-.06.1-.07.16,0,.21l5.45,6.49a1,1,0,0,1,.23.73l-.77,8.6C7.93,29,8,29,8,29l7.58-3.42a1,1,0,0,1,.82,0L24,29s.09,0,.08-.13l-.77-8.6a1,1,0,0,1,.23-.73L29,13.05a.15.15,0,0,0,0-.14l-8.1-2a1,1,0,0,1-.64-.48ZM10.88,10h0Z"
+                                        fill="currentColor" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="hero-achievements__inner">
+                            <div class="hero-achievements__title">110+</div>
+                            <div class="hero-achievements__subtitle">Google</div>
+                            <div class="hero-achievements__subtitle">Reviews</div>
+                        </div>
+                    </div>
+                    <div class="hero-achievements__item">
+                        <div class="hero-achievements__icon">
+                            <svg class="hero-achievements__svg" viewBox="0 0 128 128"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M64,128a6.9,6.9,0,0,1-4.89-2L26.23,93.12A55.05,55.05,0,0,1,10,53.69,53.29,53.29,0,0,1,25.87,15.58a54.56,54.56,0,0,1,76.26,0h0A53.29,53.29,0,0,1,118,53.69a55.05,55.05,0,0,1-16.23,39.43L68.89,125.94A6.9,6.9,0,0,1,64,128ZM64,6A48.19,48.19,0,0,0,30.08,19.85,47.34,47.34,0,0,0,16,53.7,49.1,49.1,0,0,0,30.47,88.87l32.87,32.82a.91.91,0,0,0,1.31,0L97.53,88.87A49.1,49.1,0,0,0,112,53.7,47.34,47.34,0,0,0,97.92,19.85h0A48.19,48.19,0,0,0,64,6Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M64,81.41a27.25,27.25,0,1,1,19.3-8A27.23,27.23,0,0,1,64,81.41Zm0-48.49a21.26,21.26,0,1,0,15.06,6.22h0A21.25,21.25,0,0,0,64,32.92Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="hero-achievements__inner">
+                            <div class="hero-achievements__title">Cincinnati & <br> Surrounding <br> Areas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-btns">
+                    <div class="hero-btns__item"><a class="hero-btns__link" href="#">get your free 3d design & quote
+                            <span><svg class="hero-btns__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                                    xml:space="preserve">
+                                    <path d="M2.9,51.6h87.6l-7.7,7.6c-1,1-1,2.6,0,3.5l0,0c1,1,2.6,1,3.5,0l12.9-13c0.4-0.4,0.4-1,0-1.4l-12.9-13c-1-1-2.6-1-3.5,0l0,0
+	c-1,1-1,2.6,0,3.5l7.7,7.6H2.9c-1.4,0-2.5,1.1-2.5,2.5l0,0C0.4,50.5,1.5,51.6,2.9,51.6z" fill="currentColor" />
+                                </svg></span></a></div>
+                    <div class="hero-btns__item"><a class="hero-btns__link" href="#">EXPLORE OUR WORK</a></div>
+                </div>
+                <div class="hero-sound" id="sound">
+                    <svg class='hero-sound__svg hero-sound--mute' viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="Layer 34" id="Layer_34">
+                            <path class="cls-1"
+                                d="M18,29a1,1,0,0,1-.57-.18l-10-7A1,1,0,0,1,7,21V11a1,1,0,0,1,.43-.82l10-7a1,1,0,0,1,1-.07A1,1,0,0,1,19,4V28a1,1,0,0,1-.54.89A1,1,0,0,1,18,29ZM9,20.48l8,5.6V5.92l-8,5.6Z"
+                                fill='currentColor' />
+                            <path class="cls-1"
+                                d="M8,22H4a3,3,0,0,1-3-3V13a3,3,0,0,1,3-3H8a1,1,0,0,1,1,1V21A1,1,0,0,1,8,22ZM4,12a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H7V12Z"
+                                fill='currentColor' />
+                            <path class="cls-1" d="M18,21V19a3,3,0,0,0,2.12-5.12l1.42-1.42A5,5,0,0,1,18,21Z"
+                                fill='currentColor' />
+                            <path class="cls-1"
+                                d="M26.48,25.48a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42,11,11,0,0,0,0-15.54,1,1,0,1,1,1.42-1.42,13,13,0,0,1,0,18.38A1,1,0,0,1,26.48,25.48Z"
+                                fill='currentColor' />
+                            <path class="cls-1"
+                                d="M23.65,22.65a1,1,0,0,1-.7-.29A1,1,0,0,1,23,21a7,7,0,0,0,0-9.9,1,1,0,0,1,1.41-1.41,9,9,0,0,1,0,12.72A1,1,0,0,1,23.65,22.65Z"
+                                fill='currentColor' />
+                        </g>
+                    </svg>
+                    <svg class='hero-sound__svg hero-sound--sound' viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="Layer 35" id="Layer_35">
+                            <path class="cls-1"
+                                d="M18,29a1,1,0,0,1-.57-.18l-10-7A1,1,0,0,1,7,21V11a1,1,0,0,1,.43-.82l10-7a1,1,0,0,1,1-.07A1,1,0,0,1,19,4V28a1,1,0,0,1-.54.89A1,1,0,0,1,18,29ZM9,20.48l8,5.6V5.92l-8,5.6Z"
+                                fill='currentColor' />
+                            <path class="cls-1"
+                                d="M8,22H4a3,3,0,0,1-3-3V13a3,3,0,0,1,3-3H8a1,1,0,0,1,1,1V21A1,1,0,0,1,8,22ZM4,12a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H7V12Z"
+                                fill='currentColor' />
+                            <rect class="cls-1" height="12" transform="translate(-3.77 22.9) rotate(-45)" width="2"
+                                x="24.76" y="10" fill="currentColor" />
+                            <rect class="cls-1" height="2" transform="translate(-3.77 22.9) rotate(-45)" width="12"
+                                x="19.76" y="15" / fill="currentColor">
+                        </g>
+                    </svg>
+                    <span class="hero-sound--mute">Sound ON</span>
+                    <span class="hero-sound--sound">Sound OFF</span>
+                </div>
+            </div> <!--Левая-->
+
+            <aside class="testimonials">
+                <div class="testimonials__header">
+                    <div class="testimonials__subtitle">testimonials</div>
+                    <div class="testimonials__title"><span>real homeowner reviews</span></div>
+                    <div class="testimonials__subtitle">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- <i class="fa-solid fa-circle-check"></i> -->
+                        110+ Google reviews
+                    </div>
+                </div>
+                <div class="testimonials-contents">
+                    <div class="testimonials-contents__item"> <!--Карточка отзыва-->
+                        <div class="testimonials-contents__avatar">
+                            <img src="./images/avatar-1.png" alt="">
+                        </div>
+                        <div class="testimonials-contents__review">
+                            <div class="testimonials-contents__name">Laura Brothers</div>
+                            <div class="testimonials-contents__date">1 month ago</div>
+                            <div class="testimonials-contents__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="testimonials-contents__comment">
+                                We met with a few contractors to redo our kitchen and Sergii made us feel comfortable
+                                with the process. He was...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-contents__item"> <!--Карточка отзыва-->
+                        <div class="testimonials-contents__avatar">
+                            <img src="./images/avatar-3.png" alt="">
+                        </div>
+                        <div class="testimonials-contents__review">
+                            <div class="testimonials-contents__name">Debbie Burris</div>
+                            <div class="testimonials-contents__date">1 month ago</div>
+                            <div class="testimonials-contents__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="testimonials-contents__comment">
+                                Alice Cabinets recently worked with us on the renovation of our kitchen in West Chester, Oh. The built several custom cabinets...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-contents__item"> <!--Карточка отзыва-->
+                        <div class="testimonials-contents__avatar">
+                            <img src="./images/avatar-2.png" alt="">
+                        </div>
+                        <div class="testimonials-contents__review">
+                            <div class="testimonials-contents__name">Zachary Russ</div>
+                            <div class="testimonials-contents__date">1 month ago</div>
+                            <div class="testimonials-contents__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="testimonials-contents__comment">
+                                Everyone here was AMAZING. The piece I picked up was very heavy and they took 20 minutes to help me load it into my trailer! Very...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-contents__item"> <!--Карточка отзыва-->
+                        <div class="testimonials-contents__avatar">
+                            <img src="./images/avatar-4.png" alt="">
+                        </div>
+                        <div class="testimonials-contents__review">
+                            <div class="testimonials-contents__name">Iryna Yablokova</div>
+                            <div class="testimonials-contents__date">2 months ago</div>
+                            <div class="testimonials-contents__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="testimonials-contents__comment">
+                                Thank you so much to Alice Cabinets & Woodworking for the accomplishment of my dream! I absolutely love how this feature...
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </aside> <!--Правая-->
+
+        </div>
+        <aside class="testimonials mobil">
+            <span class="testimonials-contents__btn"></span>
+            <div class="testimonials-nav">
+    <button class="testimonials-prev"></button>
+    <button class="testimonials-next"></button>
+</div>
+                <div class="testimonials__header">
+                    <div class="testimonials__subtitle">testimonials</div>
+                    <div class="testimonials__title"><span>real homeowner reviews</span></div>
+                    <div class="testimonials__subtitle">
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- <i class="fa-solid fa-circle-check"></i> -->
+                        110+ Google reviews
+                    </div>
+                </div>
+                <div class="testimonials-contents">
+                    <div class="testimonials-contents__item card-mobil testimonials-contents__item--one active"> <!--Карточка отзыва-->
+                        <div class="testimonials-contents__avatar">
+                            <img src="./images/avatar-1.png" alt="">
+                        </div>
+                        <div class="testimonials-contents__review">
+                            <div class="testimonials-contents__name">Laura Brothers</div>
+                            <div class="testimonials-contents__date">1 month ago</div>
+                            <div class="testimonials-contents__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="testimonials-contents__comment">
+                                We met with a few contractors to redo our kitchen and Sergii made us feel comfortable
+                                with the process. He was...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-contents__item card-mobil testimonials-contents__item--two"> <!--Карточка отзыва-->
+                        <div class="testimonials-contents__avatar">
+                            <img src="./images/avatar-3.png" alt="">
+                        </div>
+                        <div class="testimonials-contents__review">
+                            <div class="testimonials-contents__name">Debbie Burris</div>
+                            <div class="testimonials-contents__date">1 month ago</div>
+                            <div class="testimonials-contents__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="testimonials-contents__comment">
+                                Alice Cabinets recently worked with us on the renovation of our kitchen in West Chester, Oh. The built several custom cabinets...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-contents__item card-mobil testimonials-contents__item--three"> <!--Карточка отзыва-->
+                        <div class="testimonials-contents__avatar">
+                            <img src="./images/avatar-2.png" alt="">
+                        </div>
+                        <div class="testimonials-contents__review">
+                            <div class="testimonials-contents__name">Zachary Russ</div>
+                            <div class="testimonials-contents__date">1 month ago</div>
+                            <div class="testimonials-contents__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="testimonials-contents__comment">
+                                Everyone here was AMAZING. The piece I picked up was very heavy and they took 20 minutes to help me load it into my trailer! Very...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-contents__item card-mobil testimonials-contents__item--four"> <!--Карточка отзыва-->
+                        <div class="testimonials-contents__avatar">
+                            <img src="./images/avatar-4.png" alt="">
+                        </div>
+                        <div class="testimonials-contents__review">
+                            <div class="testimonials-contents__name">Iryna Yablokova</div>
+                            <div class="testimonials-contents__date">2 months ago</div>
+                            <div class="testimonials-contents__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="testimonials-contents__comment">
+                                Thank you so much to Alice Cabinets & Woodworking for the accomplishment of my dream! I absolutely love how this feature...
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </aside>
+    </section>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
