@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,10 +13,11 @@
     <section class="hero">
         <!-- <img src="./images/hero.jpeg" alt="hero"> -->
 
-    <video id="hero-video" autoplay muted loop playsinline>
-        <source src="./Source/video/video.mp4" type="video/mp4"></source>
-        
-    </video>
+        <video id="hero-video" autoplay muted loop playsinline>
+            <!-- <source src="./video/pc-video-full.mp4" type="video/mp4"></source> -->
+            <source src="./video/pc-video-full.mp4" type="video/mp4" media="(min-width: 768px)">
+            <source src="./video/mobil-video-full.mp4" type="video/mp4" media="(max-width: 767px)">
+        </video>
 
         <span class="hero__glow"></span>
 
@@ -26,16 +27,17 @@
                 <div class="hero__span">CUSTOM CABINETS & HOME REMODELING</div>
                 <h1 class="hero__title">Custom Cabinets</h1>
                 <div class="hero__italic">Built for Your Lifestyle.</div>
-                <div class="hero__subtitle">High-end cabinetry and complete home remodeling for homeowners who <br> value quality, detail, and design.</div>
+                <div class="hero__subtitle">High-end cabinetry and complete home remodeling for homeowners who <br>
+                    value quality, detail, and design.</div>
                 <div class="hero__rating">
                     <div class="hero__rating__title">
-                       
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
                         <span>5/5 Rating</span>
                     </div>
                     <div class="hero__rating__subtitle">
@@ -214,7 +216,8 @@
                                 <i class="fa-solid fa-circle-check"></i>
                             </div>
                             <div class="testimonials-contents__comment">
-                                Alice Cabinets recently worked with us on the renovation of our kitchen in West Chester, Oh. The built several custom cabinets...
+                                Alice Cabinets recently worked with us on the renovation of our kitchen in West Chester,
+                                Oh. The built several custom cabinets...
                             </div>
                         </div>
                     </div>
@@ -234,7 +237,8 @@
                                 <i class="fa-solid fa-circle-check"></i>
                             </div>
                             <div class="testimonials-contents__comment">
-                                Everyone here was AMAZING. The piece I picked up was very heavy and they took 20 minutes to help me load it into my trailer! Very...
+                                Everyone here was AMAZING. The piece I picked up was very heavy and they took 20 minutes
+                                to help me load it into my trailer! Very...
                             </div>
                         </div>
                     </div>
@@ -254,9 +258,10 @@
                                 <i class="fa-solid fa-circle-check"></i>
                             </div>
                             <div class="testimonials-contents__comment">
-                                Thank you so much to Alice Cabinets & Woodworking for the accomplishment of my dream! I absolutely love how this feature...
+                                Thank you so much to Alice Cabinets & Woodworking for the accomplishment of my dream! I
+                                absolutely love how this feature...
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -266,109 +271,116 @@
         <aside class="testimonials mobil">
             <span class="testimonials-contents__btn"></span>
             <div class="testimonials-nav">
-    <button class="testimonials-prev"></button>
-    <button class="testimonials-next"></button>
-</div>
-                <div class="testimonials__header">
-                    <div class="testimonials__subtitle">testimonials</div>
-                    <div class="testimonials__title"><span>real homeowner reviews</span></div>
-                    <div class="testimonials__subtitle">
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <!-- <i class="fa-solid fa-circle-check"></i> -->
-                        110+ Google reviews
+                <button class="testimonials-prev"></button>
+                <button class="testimonials-next"></button>
+            </div>
+            <div class="testimonials__header">
+                <div class="testimonials__subtitle">testimonials</div>
+                <div class="testimonials__title"><span>real homeowner reviews</span></div>
+                <div class="testimonials__subtitle">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                     </div>
+                    <!-- <i class="fa-solid fa-circle-check"></i> -->
+                    110+ Google reviews
                 </div>
-                <div class="testimonials-contents">
-                    <div class="testimonials-contents__item card-mobil testimonials-contents__item--one active"> <!--Карточка отзыва-->
-                        <div class="testimonials-contents__avatar">
-                            <img src="./images/avatar-1.png" alt="">
-                        </div>
-                        <div class="testimonials-contents__review">
-                            <div class="testimonials-contents__name">Laura Brothers</div>
-                            <div class="testimonials-contents__date">1 month ago</div>
-                            <div class="testimonials-contents__stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                            <div class="testimonials-contents__comment">
-                                We met with a few contractors to redo our kitchen and Sergii made us feel comfortable
-                                with the process. He was...
-                            </div>
-                        </div>
+            </div>
+            <div class="testimonials-contents">
+                <div class="testimonials-contents__item card-mobil testimonials-contents__item--one active">
+                    <!--Карточка отзыва-->
+                    <div class="testimonials-contents__avatar">
+                        <img src="./images/avatar-1.png" alt="">
                     </div>
-                    <div class="testimonials-contents__item card-mobil testimonials-contents__item--two"> <!--Карточка отзыва-->
-                        <div class="testimonials-contents__avatar">
-                            <img src="./images/avatar-3.png" alt="">
+                    <div class="testimonials-contents__review">
+                        <div class="testimonials-contents__name">Laura Brothers</div>
+                        <div class="testimonials-contents__date">1 month ago</div>
+                        <div class="testimonials-contents__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-circle-check"></i>
                         </div>
-                        <div class="testimonials-contents__review">
-                            <div class="testimonials-contents__name">Debbie Burris</div>
-                            <div class="testimonials-contents__date">1 month ago</div>
-                            <div class="testimonials-contents__stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                            <div class="testimonials-contents__comment">
-                                Alice Cabinets recently worked with us on the renovation of our kitchen in West Chester, Oh. The built several custom cabinets...
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonials-contents__item card-mobil testimonials-contents__item--three"> <!--Карточка отзыва-->
-                        <div class="testimonials-contents__avatar">
-                            <img src="./images/avatar-2.png" alt="">
-                        </div>
-                        <div class="testimonials-contents__review">
-                            <div class="testimonials-contents__name">Zachary Russ</div>
-                            <div class="testimonials-contents__date">1 month ago</div>
-                            <div class="testimonials-contents__stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                            <div class="testimonials-contents__comment">
-                                Everyone here was AMAZING. The piece I picked up was very heavy and they took 20 minutes to help me load it into my trailer! Very...
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonials-contents__item card-mobil testimonials-contents__item--four"> <!--Карточка отзыва-->
-                        <div class="testimonials-contents__avatar">
-                            <img src="./images/avatar-4.png" alt="">
-                        </div>
-                        <div class="testimonials-contents__review">
-                            <div class="testimonials-contents__name">Iryna Yablokova</div>
-                            <div class="testimonials-contents__date">2 months ago</div>
-                            <div class="testimonials-contents__stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                            <div class="testimonials-contents__comment">
-                                Thank you so much to Alice Cabinets & Woodworking for the accomplishment of my dream! I absolutely love how this feature...
-                            </div>
-                            
+                        <div class="testimonials-contents__comment">
+                            We met with a few contractors to redo our kitchen and Sergii made us feel comfortable
+                            with the process. He was...
                         </div>
                     </div>
                 </div>
-            </aside>
+                <div class="testimonials-contents__item card-mobil testimonials-contents__item--two">
+                    <!--Карточка отзыва-->
+                    <div class="testimonials-contents__avatar">
+                        <img src="./images/avatar-3.png" alt="">
+                    </div>
+                    <div class="testimonials-contents__review">
+                        <div class="testimonials-contents__name">Debbie Burris</div>
+                        <div class="testimonials-contents__date">1 month ago</div>
+                        <div class="testimonials-contents__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="testimonials-contents__comment">
+                            Alice Cabinets recently worked with us on the renovation of our kitchen in West Chester, Oh.
+                            The built several custom cabinets...
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-contents__item card-mobil testimonials-contents__item--three">
+                    <!--Карточка отзыва-->
+                    <div class="testimonials-contents__avatar">
+                        <img src="./images/avatar-2.png" alt="">
+                    </div>
+                    <div class="testimonials-contents__review">
+                        <div class="testimonials-contents__name">Zachary Russ</div>
+                        <div class="testimonials-contents__date">1 month ago</div>
+                        <div class="testimonials-contents__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="testimonials-contents__comment">
+                            Everyone here was AMAZING. The piece I picked up was very heavy and they took 20 minutes to
+                            help me load it into my trailer! Very...
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-contents__item card-mobil testimonials-contents__item--four">
+                    <!--Карточка отзыва-->
+                    <div class="testimonials-contents__avatar">
+                        <img src="./images/avatar-4.png" alt="">
+                    </div>
+                    <div class="testimonials-contents__review">
+                        <div class="testimonials-contents__name">Iryna Yablokova</div>
+                        <div class="testimonials-contents__date">2 months ago</div>
+                        <div class="testimonials-contents__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="testimonials-contents__comment">
+                            Thank you so much to Alice Cabinets & Woodworking for the accomplishment of my dream! I
+                            absolutely love how this feature...
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </aside>
     </section>
     <script src="./js/scripts.js"></script>
 </body>
